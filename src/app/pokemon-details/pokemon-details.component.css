@@ -1,0 +1,20 @@
+.fire{
+  border: 5px solid red;
+}
+.fire .type-text{
+  color: red;
+}
+
+.water{
+  border: 5px solid blue;
+}
+.water .type-text{
+  color: blue;
+}
+
+.grass{
+  border: 5px solid green;
+}
+.grass .type-text{
+  color: green;
+}

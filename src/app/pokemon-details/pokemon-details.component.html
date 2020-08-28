@@ -1,0 +1,16 @@
+<div *ngIf="pokemonDetails" class="col col-md-4" style="padding: 10px;">
+  <div class="card" style="width: 18rem;" [ngClass]="setTypeClass()">
+    <img class="card-img-top" [src]="pokemonDetails.sprites.front_default" [alt]="pokemon.name">
+    <div class="card-body">
+      <h5 class="card-title" style="text-decoration: underline;">{{pokemon.name}} / type: <span class="type-text">{{pokemonDetails.types[0].type.name}}</span></h5>
+      <h6 class="card-subtitle mb-2 text-muted">Moves</h6>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{pokemonDetails.moves[10].move.name}}</li>
+        <li class="list-group-item">{{pokemonDetails.moves[20].move.name}}</li>
+        <li class="list-group-item">{{pokemonDetails.moves[30].move.name}}</li>
+        <li class="list-group-item">{{pokemonDetails.moves[40].move.name}}</li>
+      </ul>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+</div>
